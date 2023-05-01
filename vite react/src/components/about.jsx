@@ -3,7 +3,6 @@ import React from "react";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap";
-import Observer from "gsap/Observer";
 
 const About =()=>{
 
@@ -19,13 +18,6 @@ const About =()=>{
         })
             tl.fromTo('.aboutElement', {y:'200px', opacity:0}, {y:0, opacity:1, duration:1, stagger:.2, delay:.2})
     },[])
-
-    // useEffect(()=>{
-    //     let tl = gsap.timeline()
-
-    //     tl
-    // })
-
 return(
 <div id='about' className="bg-[#000000] py-[100px] grid md:grid-cols-2 text-justify  overflow-hidden">
     <div className=" aboutElement w-[80%] m-auto bg-gradient-to-tr from-[#c75d00] to-[#DAA520] text-black p-[30px] my-[20px] rounded-3xl hover:bg-gradient-to-tr hover:from-[#DAA520] hover:to-[#c75d00]">

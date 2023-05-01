@@ -27,8 +27,8 @@ body {
 }
 
 *::selection{
-  background: rgb(14, 10, 3);
-  color: rgba(218, 165, 32);
+  background: #030303;
+  color: white;
 }
 
 .header{
@@ -43,10 +43,40 @@ body {
   transition: .3s;
 }
 
+.navbar{
+  transition: .5s;
+}
+
 .activeNavbar {
   position: fixed;
   top:40px;
-  right:0;
+  left:20%;
+  display: block;
+}
+
+.line{
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background: #2e1f08;
+  transition: .3s;
+}
+.activeIcon .item-1{
+  transform: rotate(45deg);
+  position: relative;
+  top:4px;
+  transition: .3s;
+}
+
+.activeIcon .item-2{
+  display: none;
+}
+
+.activeIcon .item-3{
+  transform: rotate(-45deg);
+  position: relative;
+  top:-4px;
+  transition: .3s;
 }
 
 /* .navbar .active{

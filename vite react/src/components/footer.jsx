@@ -6,14 +6,14 @@ import { AiOutlineMail } from 'react-icons/ai'
 const Footer = () => {
     return (
         <>
-            <div className="grid grid-rows-2 py-[150px] bg-black align-middle">
-                <div className="w-[80%] mx-auto grid lg:grid-cols-3">
+            <div className="grid grid-rows-2 pt-[150px] bg-black align-middle">
+                <div className="w-[80%] mx-auto grid lg:grid-cols-3 space-y-[30px]">
                     <div>
                         <h1 className="text-[50px] font-orbitron text-[#DAA520]">KONTEK</h1>
                         <p className="text-[25px] text-[silver] font-gruppo">Lorem, ipsum dolor.</p>
                     </div>
                     <div className="text-left mx-auto">
-                        <h1 className=" w-fit text-[35px] font-gruppo font-extrabold mb-[30px]">
+                        <h1 className=" w-fit text-[35px] font-gruppo font-extrabold mb-[30px] mx-auto">
                             CONTACT<div className=" w-[30%] h-[10px] rounded-full bg-[#DAA520] mx-auto"></div>
                         </h1>
                         <div className="flex text-[18px]"> <AiOutlineMail className="mt-[5px] text-[20px] mr-[-20px] text-[#DAA520]" /> <p className="ml-[30px]">jakub.kontek05@gmail.com</p></div>
